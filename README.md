@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/markvanderloo/dircreate.svg?branch=master)](https://travis-ci.org/markvanderloo/dircreate)
+[![CRAN](http://www.r-pkg.org/badges/version/dircreate)](http://cran.r-project.org/package=dircreate/)
+[![Downloads](http://cranlogs.r-pkg.org/badges/dircreate)](http://www.r-pkg.org/pkg/dircreate) 
 
 ### dircreate: drop-in replacement for base::dir.create
 
