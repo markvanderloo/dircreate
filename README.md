@@ -46,12 +46,15 @@ And there was much rejoicing.
 
 
 #### Great! Can I make this permanent?
-Yes, if you add the following line to your `Rprofile-site` file (you find it
+Yes, if you add the following line to your `Rprofile.site` file (you find it
 under `//<your R installation dir>/etc/`) the package will be loaded invisibly.
 
 ```r
 suppressPackageStartupMessages(library(dircreate))
 ```
+You can also add it to your own `.Rprofile` file so it only affects you and not
+all users.
+
 
 #### But, I need the original!
 No problem, just use
