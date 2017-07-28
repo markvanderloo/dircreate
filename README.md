@@ -31,6 +31,19 @@ thread
 [here](http://r.789695.n4.nabble.com/Recursive-dir-create-on-Windows-shares-td4725108.html). Bad, bad Microsoft (but hey, what'd y'all expect?) 
 
 
+#### I want it! how to install?
+
+It is not on `CRAN` (yet). First install
+[drat](https://CRAN.R-project.org/package=drat) if you don't have it.
+```r
+# in case of no 'drat':
+install.packages('drat')
+
+# then:
+drat::addRepo('markvanderloo')
+install.packages('dircreate')
+```
+
 
 #### What does it do?
 On loading the package the original `dir.create` from base R is replaced
