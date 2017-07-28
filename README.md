@@ -25,8 +25,8 @@ permission there since they already exist.
 
 
 The failure is caused by some change in Windows since R's code hasn't changed
-since 2008 (see
-[here](https://bugs.r-project.org/bugzilla/show_bug.cgi?id=17159)) and the mail
+since 2008: see
+[here](https://bugs.r-project.org/bugzilla/show_bug.cgi?id=17159) and the mail
 thread
 [here](http://r.789695.n4.nabble.com/Recursive-dir-create-on-Windows-shares-td4725108.html). Bad, bad Microsoft (but hey, what'd y'all expect?) 
 
