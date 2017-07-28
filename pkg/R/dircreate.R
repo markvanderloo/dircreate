@@ -11,6 +11,10 @@
 #' @param recursive	logical. Should elements of the path other than the last be created? If true, like the Unix command mkdir -p.
 #' @param mode the mode to be used on Unix-alikes: it will be coerced by as.octmode. For Sys.chmod it is recycled along paths.
 #'
+#' @examples 
+#' p <- file.path(Sys.getenv("HOME"),"foo","bar","baz")
+#' # dir.create(p)
+#' 
 #' @export
 dir.create <- function(path,showWarnings=TRUE, recursive=FALSE,mode="0777"){
   if(!recursive) {
