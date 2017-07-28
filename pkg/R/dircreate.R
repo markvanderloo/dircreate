@@ -1,4 +1,10 @@
-#' Alternatief voor dir.create
+#' Alternative for dir.create
+#'
+#' This function behaves similar \code{\link[base]{dir.create}}, except that for
+#' \code{recursive=TRUE} no attempt is made to (re)create existing directories.
+#' This avoids a problem on Windows network drives. Use \code{base::dir.create}
+#' to call the original version.
+#'
 #'
 #' @param path character vector containing a single path name. Tilde expansion (see path.expand) is done.
 #' @param showWarnings logical; should the warnings on failure be shown?
