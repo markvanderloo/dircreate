@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+pkg/man/*
+output/*
+*.o
+*.so
+*.dll
+*.html
+*.HTML
+*.Rproj

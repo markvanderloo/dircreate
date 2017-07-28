@@ -1,0 +1,32 @@
+
+# travis config
+
+dist: trusty
+language: r
+sudo: required
+
+addons:
+  apt:
+    packages:
+      - libxml2-dev
+
+r:
+ - release
+
+before_install:
+  - R -e "install.packages(c('devtools','roxygen2'))"
+  - R -e "devtools::document('./pkg')"
+  - cd ./pkg
+
+r_packages:
+  - covr
+  - rmarkdown
+
+
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+
